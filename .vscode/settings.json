@@ -1,0 +1,12 @@
+{
+  "editor.bracketPairColorization.enabled": true,
+  "python.languageServer": "Pylance",
+  "files.associations": {
+    "**/*.html": "html",
+    "**/templates/**/*.html": "django-html",
+    "**/templates/**/*": "django-txt",
+    "**/requirements{/**,*}.{txt,in}": "pip-requirements"
+  },
+  "emmet.includeLanguages": { "django-html": "html" },
+  "python.pythonPath": "C:\\Users\\Ramy's PC\\AppData\\Local\\Programs\\Python\\Python39\\python.exe"
+}
