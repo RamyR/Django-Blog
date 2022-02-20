@@ -1,7 +1,37 @@
 {% extends 'base.html' %} 
+{% load static %}
 
 {% block title %} My Blog {% endblock %} 
 
+{% block css_files %}
+    <link rel="stylesheet" href="{% static "blog/index.css" %}" />
+{% endblock  %}
+
 {% block content %}
-<h1>Welcome to my blog</h1>
+
+
+
+<section id="welcome">
+    <header>
+        <img src="{% static 'blog/images/me.jpg' %}" alt="Ramy - The Author of This Blog" >
+        <h2>RAMY'S BLOG</h2>
+
+        <p>Hi, I am Ramy and I love blog about all kind of things</p>
+    </header>
+</section>
+
+<section id="latest-posts">
+    <h2>My Latest Thoughts</h2>
+
+    <ul>
+        {% include "blog/includes/post.html" %}
+    </ul>
+</section>
+
+<section id="about">
+    <h2>What I Do</h2>
+    <p>
+        I love programming, I love learning new things
+    </p>
+</section>
 {% endblock %}
